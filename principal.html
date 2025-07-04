@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歷任校長 - 臺南市立仁德國小</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #eafcff;
+            font-family: "KaiTi", "Noto Sans TC", sans-serif;
+        }
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+        .sidebar {
+            background: #7d8b8e;
+            width: 320px;
+            padding: 32px 0 32px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-top-right-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+        .sidebar img {
+            height: 100px;
+            margin-bottom: 12px;
+        }
+        .school-title {
+            color: #fff;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 4px;
+            letter-spacing: 2px;
+        }
+        .school-subtitle {
+            color: #fff;
+            font-size: 0.9em;
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        .side-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            width: 80%;
+        }
+        .side-menu-btn {
+            background: #eafcff;
+            color: #222;
+            border: none;
+            border-radius: 30px;
+            padding: 12px 0;
+            font-size: 1.15em;
+            font-family: inherit;
+            font-weight: 500;
+            cursor: pointer;
+            margin: 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            transition: background 0.2s, color 0.2s;
+        }
+        .side-menu-btn:hover {
+            background: #bfffff;
+            color: #444;
+        }
+        .main {
+            flex: 1;
+            padding: 48px 40px 0 60px;
+        }
+        .main h1 {
+            font-size: 4em;
+            font-family: "KaiTi", "Noto Sans TC", serif;
+            font-weight: normal;
+            margin-top: 0;
+            margin-bottom: 32px;
+        }
+        .principal-info {
+            font-size: 1.5em;
+            line-height: 1.7;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .principal-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .principal-name {
+            font-size: 2em;
+            font-weight: bold;
+            color: #444;
+            margin-bottom: 16px;
+        }
+        .contact-info {
+            font-size: 1.2em;
+            color: #666;
+        }
+        .contact-info div {
+            margin-bottom: 8px;
+        }
+        @media (max-width: 900px) {
+            .container { flex-direction: column; }
+            .sidebar { width: 100%; border-radius: 0; flex-direction: row; justify-content: flex-start; padding: 20px; }
+            .side-menu { flex-direction: row; gap: 10px; width: auto; }
+            .main { padding: 24px 10px 0 10px; }
+            .main h1 { font-size: 2.2em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div style="background: #eafcff; border-radius: 8px; padding: 18px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.06); margin-bottom: 12px;">
+                <a href="index.html" style="display: inline-block;"><img src="school_logo.png" alt="學校標誌" style="height: 80px;"></a>
+            </div>
+            <div>
+            </div>
+            <div class="side-menu">
+                <button class="side-menu-btn" onclick="window.location.href='school_history.html'">學校沿革</button>
+                <button class="side-menu-btn" onclick="window.open('https://school.tn.edu.tw/sch_detail.aspx?sch_code=114601', '_blank')">基本資料</button>
+                <button class="side-menu-btn" onclick="window.location.href='principal.html'">歷任校長</button>
+                <button class="side-menu-btn">校舍設備</button>
+                <button class="side-menu-btn">校園美景</button>
+                <button class="side-menu-btn">懷舊照片</button>
+                <button class="side-menu-btn">百年校慶</button>
+            </div>
+        </div>
+        <div class="main">
+            <h1>歷任校長</h1>
+            <div class="principal-info">
+                <div class="principal-card">
+                    <h3 style="font-size: 1.5em; color: #444; margin-bottom: 16px;">歷任校長名錄</h3>
+                    <div style="font-size: 1.2em; line-height: 1.8; color: #666;">
+                        <div style="margin-bottom: 16px;">
+                            <strong>第一任校長  陳壽</strong><br>
+                            任期：民國34年12月06日～民國39年09月01日
+                        </div>
+                        <div style="margin-bottom: 16px;">
+                            <strong>第二任校長  林福來</strong><br>
+                            任期：民國39年09月01日～民國45年08月01日
+                        </div>
+                        <div style="margin-bottom: 16px;">
+                            <strong>第三任校長：林文彬</strong><br>
+                            任期：民國45年08月01日～民國52年08月01日
+                        </div>
+                        <div style="margin-bottom: 16px;">
+                            <strong>第四任校長：黃清吉</strong><br>
+                            任期：民國52年08月01日～民國58年08月01日
+                        </div>
+                        <div style="margin-bottom: 16px;">
+                            <strong>第五任校長：陳金木</strong><br>
+                            任期：民國58年08月01日～民國65年08月01日
+                        </div>
+                        <div style="margin-bottom: 16px;">
+                            <strong>第六任校長：林文雄</strong><br>
+                            任期：民國65年08月01日～民國72年08月01日
+                        </div>
+                        <div style="margin-bottom: 16px;">
+                            <strong>第七任校長：陳明德</strong><br>
+                            任期：民國72年08月01日～民國79年08月01日
+                        </div>
+                        <div style="margin-bottom: 16px;">
+                            <strong>第八任校長：王清吉</strong><br>
+                            任期：民國79年08月01日～民國86年08月01日
+                        </div>
+                        <div style="margin-bottom: 16px;">
+                            <strong>第九任校長：林文德</strong><br>
+                            任期：民國86年08月01日～民國93年08月01日
+                        </div>
+                        <div style="margin-bottom: 16px;">
+                            <strong>第十任校長：陳金德</strong><br>
+                            任期：民國93年08月01日～民國100年08月01日
+                        </div>
+                        <div style="margin-bottom: 16px;">
+                            <strong>第十一任校長：王清文</strong><br>
+                            任期：民國100年08月01日～民國107年08月01日
+                        </div>
+                        <div style="margin-bottom: 16px;">
+                            <strong>第十二任校長：李培瑜</strong><br>
+                            任期：民國107年08月01日～迄今
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
