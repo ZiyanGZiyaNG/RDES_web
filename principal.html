@@ -37,12 +37,14 @@
             text-align: center;
             margin-bottom: 4px;
             letter-spacing: 2px;
+            font-family: "KaiTi", "Noto Sans TC", sans-serif;
         }
         .school-subtitle {
             color: #fff;
             font-size: 0.9em;
             text-align: center;
             margin-bottom: 32px;
+            font-family: "KaiTi", "Noto Sans TC", sans-serif;
         }
         .side-menu {
             display: flex;
@@ -57,7 +59,7 @@
             border-radius: 30px;
             padding: 12px 0;
             font-size: 1.15em;
-            font-family: inherit;
+            font-family: "KaiTi", "Noto Sans TC", sans-serif;
             font-weight: 500;
             cursor: pointer;
             margin: 0;
@@ -74,7 +76,7 @@
         }
         .main h1 {
             font-size: 4em;
-            font-family: "KaiTi", "Noto Sans TC", serif;
+            font-family: "KaiTi", "Noto Sans TC", sans-serif;
             font-weight: normal;
             margin-top: 0;
             margin-bottom: 32px;
@@ -85,6 +87,7 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+            font-family: "KaiTi", "Noto Sans TC", sans-serif;
         }
         .principal-card {
             background: #fff;
@@ -97,10 +100,12 @@
             font-weight: bold;
             color: #444;
             margin-bottom: 16px;
+            font-family: "KaiTi", "Noto Sans TC", sans-serif;
         }
         .contact-info {
             font-size: 1.2em;
             color: #666;
+            font-family: "KaiTi", "Noto Sans TC", sans-serif;
         }
         .contact-info div {
             margin-bottom: 8px;
@@ -126,74 +131,103 @@
                 <button class="side-menu-btn" onclick="window.location.href='school_history.html'">學校沿革</button>
                 <button class="side-menu-btn" onclick="window.open('https://school.tn.edu.tw/sch_detail.aspx?sch_code=114601', '_blank')">基本資料</button>
                 <button class="side-menu-btn" onclick="window.location.href='principal.html'">歷任校長</button>
-                <button class="side-menu-btn">校舍設備</button>
-                <button class="side-menu-btn">校園美景</button>
-                <button class="side-menu-btn">懷舊照片</button>
+                <button class="side-menu-btn" onclick="window.location.href='build.html'">校舍設備</button>
+                <button class="side-menu-btn" onclick="window.open('https://drive.google.com/drive/folders/1zowvBwNof81aBqedxzC5rDO7jqa1A6ag', '_blank')">校園美景</button>
+                <button class="side-menu-btn" onclick="window.open('https://drive.google.com/drive/u/0/folders/1Fl7AM7H7YqvAQkfCsrMsO04ecxYyE70k', '_blank')">懷舊照片</button>
                 <button class="side-menu-btn">百年校慶</button>
             </div>
         </div>
         <div class="main">
             <h1>歷任校長</h1>
             <div class="principal-info">
-                <div class="principal-card">
-                    <h3 style="font-size: 1.5em; color: #444; margin-bottom: 16px;">歷任校長名錄</h3>
-                    <div style="font-size: 1.2em; line-height: 1.8; color: #666;">
-                        <div style="margin-bottom: 16px;">
-                            <strong>第一任校長  陳萬</strong><br>
-                            任期：民國34年12月06日～民國39年09月01日
+                <!-- 分頁導航 -->
+                <div style="display: flex; justify-content: center; margin-bottom: 24px; gap: 12px;">
+                    <button id="page1-btn" onclick="showPage(1)" style="padding: 8px 16px; background: #7d8b8e; color: #fff; border: 1px solid #7d8b8e; border-radius: 6px; cursor: pointer; font-size: 1em; font-family: 'KaiTi', 'Noto Sans TC', sans-serif;">第一頁 (第1-7任)</button>
+                    <button id="page2-btn" onclick="showPage(2)" style="padding: 8px 16px; background: #eafcff; color: #444; border: 1px solid #7d8b8e; border-radius: 6px; cursor: pointer; font-size: 1em; font-family: 'KaiTi', 'Noto Sans TC', sans-serif;">第二頁 (第8-13任)</button>
+                </div>
+                
+                <!-- 第一頁：第1-7任校長 -->
+                <div id="page1" class="principal-card" style="display: block; border: 3px solid #7d8b8e; box-shadow: 0 4px 16px rgba(125,139,142,0.08); border-radius: 16px; margin-bottom: 32px;">
+                    <div style="font-size: 1.2em; line-height: 1.8; color: #000000; font-family: 'KaiTi', 'Noto Sans TC', sans-serif;">
+                        <div style="margin-bottom: 20px; padding: 16px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #7d8b8e;">
+                            <strong style="color: #444; font-size: 1.1em;">第一任校長　陳萬</strong><br>
+                            <span style="color: #666; font-size: 0.95em;">任期：民國34年12月06日～民國39年09月01日</span>
                         </div>
-                        <div style="margin-bottom: 16px;">
-                            <strong>第二任校長  林福來</strong><br>
-                            任期：民國39年09月01日～民國47年03月31日
+                        <div style="margin-bottom: 20px; padding: 16px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #7d8b8e;">
+                            <strong style="color: #444; font-size: 1.1em;">第二任校長　林福來</strong><br>
+                            <span style="color: #666; font-size: 0.95em;">任期：民國39年09月01日～民國47年03月31日</span>
                         </div>
-                        <div style="margin-bottom: 16px;">
-                            <strong>第三任校長：蔡丁琴</strong><br>
-                            任期：民國47年03月31日～民國59年05月01日
+                        <div style="margin-bottom: 20px; padding: 16px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #7d8b8e;">
+                            <strong style="color: #444; font-size: 1.1em;">第三任校長　蔡丁琴</strong><br>
+                            <span style="color: #666; font-size: 0.95em;">任期：民國47年03月31日～民國59年05月01日</span>
                         </div>
-                        <div style="margin-bottom: 16px;">
-                            <strong>第四任校長：王啟聰</strong><br>
-                            任期：民國59年08月31日～民國67年01月31日
+                        <div style="margin-bottom: 20px; padding: 16px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #7d8b8e;">
+                            <strong style="color: #444; font-size: 1.1em;">第四任校長　王啟聰</strong><br>
+                            <span style="color: #666; font-size: 0.95em;">任期：民國59年08月31日～民國67年01月31日</span>
                         </div>
-                        <div style="margin-bottom: 16px;">
-                            <strong>第五任校長：李樹叢</strong><br>
-                            任期：民國67年05月01日～民國70年07月01日
+                        <div style="margin-bottom: 20px; padding: 16px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #7d8b8e;">
+                            <strong style="color: #444; font-size: 1.1em;">第五任校長　李樹叢</strong><br>
+                            <span style="color: #666; font-size: 0.95em;">任期：民國67年05月01日～民國70年07月01日</span>
                         </div>
-                        <div style="margin-bottom: 16px;">
-                            <strong>第六任校長：康天佑</strong><br>
-                            任期：民國70年07月01日～民國74年03月26日
+                        <div style="margin-bottom: 20px; padding: 16px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #7d8b8e;">
+                            <strong style="color: #444; font-size: 1.1em;">第六任校長　康天佑</strong><br>
+                            <span style="color: #666; font-size: 0.95em;">任期：民國70年07月01日～民國74年03月26日</span>
                         </div>
-                        <div style="margin-bottom: 16px;">
-                            <strong>第七任校長：李壽</strong><br>
-                            任期：民國74年03月26日～民國82年02月01日
+                        <div style="margin-bottom: 20px; padding: 16px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #7d8b8e;">
+                            <strong style="color: #444; font-size: 1.1em;">第七任校長　李壽</strong><br>
+                            <span style="color: #666; font-size: 0.95em;">任期：民國74年03月26日～民國82年02月01日</span>
                         </div>
-                        <div style="margin-bottom: 16px;">
-                            <strong>第八任校長：戴安順</strong><br>
-                            任期：民國82年02月16日～民國89年07月31日
-
-                        <div style="margin-bottom: 16px;">
-                            <strong>第九任校長：張吉山</strong><br>
-                            任期：民國89年08月01日～民國93年07月31日
+                    </div>
+                </div>
+                
+                <!-- 第二頁：第8-13任校長 -->
+                <div id="page2" class="principal-card" style="display: none; border: 3px solid #7d8b8e; box-shadow: 0 4px 16px rgba(125,139,142,0.08);">
+                    <div style="font-size: 1.2em; line-height: 1.8; color: #000000; font-family: 'KaiTi', 'Noto Sans TC', sans-serif;">
+                        <div style="margin-bottom: 20px; padding: 16px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #7d8b8e;">
+                            <strong style="color: #444; font-size: 1.1em;">第八任校長　戴安順</strong><br>
+                            <span style="color: #666; font-size: 0.95em;">任期：民國82年02月16日～民國89年07月31日</span>
                         </div>
-                        <div style="margin-bottom: 16px;">
-                            <strong>第十任校長：劉國昌</strong><br>
-                            任期：民國93年08月01日～民國97年07月31日
+                        <div style="margin-bottom: 20px; padding: 16px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #7d8b8e;">
+                            <strong style="color: #444; font-size: 1.1em;">第九任校長　張吉山</strong><br>
+                            <span style="color: #666; font-size: 0.95em;">任期：民國89年08月01日～民國93年07月31日</span>
                         </div>
-                        <div style="margin-bottom: 16px;">
-                            <strong>第十一任校長：杜水盛</strong><br>
-                            任期：民國97年08月01日～民國101年07月31日
+                        <div style="margin-bottom: 20px; padding: 16px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #7d8b8e;">
+                            <strong style="color: #444; font-size: 1.1em;">第十任校長　劉國昌</strong><br>
+                            <span style="color: #666; font-size: 0.95em;">任期：民國93年08月01日～民國97年07月31日</span>
                         </div>
-                        <div style="margin-bottom: 16px;">
-                            <strong>第十二任校長：曾文欽</strong><br>
-                            任期：民國101年08月01日～民國108年07月31日
+                        <div style="margin-bottom: 20px; padding: 16px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #7d8b8e;">
+                            <strong style="color: #444; font-size: 1.1em;">第十一任校長　杜水盛</strong><br>
+                            <span style="color: #666; font-size: 0.95em;">任期：民國97年08月01日～民國101年07月31日</span>
                         </div>
-                        iv style="margin-bottom: 16px;">
-                            <strong>第十二任校長：李培瑜</strong><br>
-                            任期：民國108年08月01日～迄今
+                        <div style="margin-bottom: 20px; padding: 16px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #7d8b8e;">
+                            <strong style="color: #444; font-size: 1.1em;">第十二任校長　曾文欽</strong><br>
+                            <span style="color: #666; font-size: 0.95em;">任期：民國101年08月01日～民國108年07月31日</span>
+                        </div>
+                        <div style="margin-bottom: 20px; padding: 16px; background: #eafcff; border-radius: 8px; border-left: 4px solid #7d8b8e; border: 2px solid #7d8b8e;">
+                            <strong style="color: #444; font-size: 1.1em;">第十三任校長　李培瑜</strong><br>
+                            <span style="color: #666; font-size: 0.95em;">任期：民國108年08月01日～迄今</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
+        <script>
+            function showPage(pageNum) {
+                // 隱藏所有頁面
+                document.getElementById('page1').style.display = 'none';
+                document.getElementById('page2').style.display = 'none';
+                
+                // 顯示選中的頁面
+                document.getElementById('page' + pageNum).style.display = 'block';
+                
+                // 更新按鈕樣式
+                document.getElementById('page1-btn').style.background = pageNum === 1 ? '#7d8b8e' : '#eafcff';
+                document.getElementById('page1-btn').style.color = pageNum === 1 ? '#fff' : '#444';
+                document.getElementById('page2-btn').style.background = pageNum === 2 ? '#7d8b8e' : '#eafcff';
+                document.getElementById('page2-btn').style.color = pageNum === 2 ? '#fff' : '#444';
+            }
+        </script>
     </div>
 </body>
 </html>
