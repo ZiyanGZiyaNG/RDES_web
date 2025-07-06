@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歷任校長 - 臺南市立仁德國小</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #eafcff;
+            font-family: "KaiTi", "Noto Sans TC", sans-serif;
+        }
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+        .sidebar {
+            background: #7d8b8e;
+            width: 320px;
+            padding: 32px 0 32px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-top-right-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+        .sidebar img {
+            height: 100px;
+            margin-bottom: 12px;
+        }
+        .school-title {
+            color: #fff;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 4px;
+            letter-spacing: 2px;
+            font-family: "KaiTi", "Noto Sans TC", sans-serif;
+        }
+        .school-subtitle {
+            color: #fff;
+            font-size: 0.9em;
+            text-align: center;
+            margin-bottom: 32px;
+            font-family: "KaiTi", "Noto Sans TC", sans-serif;
+        }
+        .side-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            width: 80%;
+        }
+        .side-menu-btn {
+            background: #eafcff;
+            color: #222;
+            border: none;
+            border-radius: 30px;
+            padding: 12px 0;
+            font-size: 1.15em;
+            font-family: "KaiTi", "Noto Sans TC", sans-serif;
+            font-weight: 500;
+            cursor: pointer;
+            margin: 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            transition: background 0.2s, color 0.2s;
+        }
+        .side-menu-btn:hover {
+            background: #bfffff;
+            color: #444;
+        }
+        .main {
+            flex: 1;
+            padding: 48px 40px 0 60px;
+        }
+        .main h1 {
+            font-size: 4em;
+            font-family: "KaiTi", "Noto Sans TC", sans-serif;
+            font-weight: normal;
+            margin-top: 0;
+            margin-bottom: 32px;
+        }
+        .principal-info {
+            font-size: 1.5em;
+            line-height: 1.7;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-family: "KaiTi", "Noto Sans TC", sans-serif;
+        }
+        .principal-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .principal-name {
+            font-size: 2em;
+            font-weight: bold;
+            color: #444;
+            margin-bottom: 16px;
+            font-family: "KaiTi", "Noto Sans TC", sans-serif;
+        }
+        .contact-info {
+            font-size: 1.2em;
+            color: #666;
+            font-family: "KaiTi", "Noto Sans TC", sans-serif;
+        }
+        .contact-info div {
+            margin-bottom: 8px;
+        }
+        @media (max-width: 900px) {
+            .container { flex-direction: column; }
+            .sidebar { width: 100%; border-radius: 0; flex-direction: row; justify-content: flex-start; padding: 20px; }
+            .side-menu { flex-direction: row; gap: 10px; width: auto; }
+            .main { padding: 24px 10px 0 10px; }
+            .main h1 { font-size: 2.2em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div style="background: #eafcff; border-radius: 8px; padding: 18px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.06); margin-bottom: 12px;">
+                <a href="../index.html"><img src="school_logo.png" alt="學校標誌" style="height: 80px;"></a>
+            </div>
+            <div>
+            </div>
+            <div class="side-menu">
+                <button class="side-menu-btn" onclick="window.location.href='history.html'">學校沿革</button>
+                <button class="side-menu-btn" onclick="window.open('https://school.tn.edu.tw/sch_detail.aspx?sch_code=114601', '_blank')">基本資料</button>
+                <button class="side-menu-btn" onclick="window.location.href='principal.html'">歷任校長</button>
+                <button class="side-menu-btn" onclick="window.location.href='build.html'">校舍設備</button>
+                <button class="side-menu-btn" onclick="window.open('https://drive.google.com/drive/folders/1zowvBwNof81aBqedxzC5rDO7jqa1A6ag', '_blank')">校園美景</button>
+                <button class="side-menu-btn" onclick="window.open('https://drive.google.com/drive/u/0/folders/1Fl7AM7H7YqvAQkfCsrMsO04ecxYyE70k', '_blank')">懷舊照片</button>
+                <button class="side-menu-btn" onclick="window.location.href='logo.html'">校徽介紹</button>
+                <button class="side-menu-btn" onclick="window.location.href='song.html'">校歌歌詞</button>
+                <button class="side-menu-btn" onclick="window.open('https://maps.app.goo.gl/sqfbfND75WzDtckz5', '_blank')">學校位置</button>
+                <button class="side-menu-btn" onclick="window.open('https://drive.google.com/drive/folders/1KMGrh1Pa36_Nbzd8BBnyCSioZKM7e8SM', '_blank')">校園配置</button>
+            </div>
+        </div>
+        <div class="main">
+            <h1>歷任校長</h1>
+            <div class="principal-info">
+                <!-- 分頁導航 -->
+                <div style="display: flex; justify-content: center; margin-bottom: 24px; gap: 12px;">
+                    <button id="page1-btn" onclick="showPage(1)" style="padding: 8px 16px; background: #7d8b8e; color: #fff; border: 1px solid #7d8b8e; border-radius: 6px; cursor: pointer; font-size: 1em; font-family: 'KaiTi', 'Noto Sans TC', sans-serif;">第一頁 (第1-7任)</button>
+                    <button id="page2-btn" onclick="showPage(2)" style="padding: 8px 16px; background: #eafcff; color: #444; border: 1px solid #7d8b8e; border-radius: 6px; cursor: pointer; font-size: 1em; font-family: 'KaiTi', 'Noto Sans TC', sans-serif;">第二頁 (第8-13任)</button>
+                </div>
+                
+                <!-- 第一頁：第1-7任校長 -->
+                <div id="page1" class="principal-card" style="display: block; border: 3px solid #7d8b8e; box-shadow: 0 4px 16px rgba(125,139,142,0.08); border-radius: 16px; margin-bottom: 32px;">
+                    <div style="font-size: 1.2em; line-height: 1.8; color: #000000; font-family: 'KaiTi', 'Noto Sans TC', sans-serif;">
+                        <div style="margin-bottom: 20px; padding: 16px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #7d8b8e;">
+                            <strong style="color: #444; font-size: 1em;">第一任校長　陳萬</strong><br>
+                            <span style="color: #666; font-size: 0.65em;">任期：民國34年12月06日～民國39年09月01日</span>
+                        </div>
+                        <div style="margin-bottom: 20px; padding: 16px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #7d8b8e;">
+                            <strong style="color: #444; font-size: 1em;">第二任校長　林福來</strong><br>
+                            <span style="color: #666; font-size: 0.65em;">任期：民國39年09月01日～民國47年03月31日</span>
+                        </div>
+                        <div style="margin-bottom: 20px; padding: 16px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #7d8b8e;">
+                            <strong style="color: #444; font-size: 1em;">第三任校長　蔡丁琴</strong><br>
+                            <span style="color: #666; font-size: 0.65em;">任期：民國47年03月31日～民國59年05月01日</span>
+                        </div>
+                        <div style="margin-bottom: 20px; padding: 16px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #7d8b8e;">
+                            <strong style="color: #444; font-size: 1em;">第四任校長　王啟聰</strong><br>
+                            <span style="color: #666; font-size: 0.65em;">任期：民國59年08月31日～民國67年01月31日</span>
+                        </div>
+                        <div style="margin-bottom: 20px; padding: 16px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #7d8b8e;">
+                            <strong style="color: #444; font-size: 1em;">第五任校長　李樹叢</strong><br>
+                            <span style="color: #666; font-size: 0.65em;">任期：民國67年05月01日～民國70年07月01日</span>
+                        </div>
+                        <div style="margin-bottom: 20px; padding: 16px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #7d8b8e;">
+                            <strong style="color: #444; font-size: 1em;">第六任校長　康天佑</strong><br>
+                            <span style="color: #666; font-size: 0.65em;">任期：民國70年07月01日～民國74年03月26日</span>
+                        </div>
+                        <div style="margin-bottom: 20px; padding: 16px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #7d8b8e;">
+                            <strong style="color: #444; font-size: 1em;">第七任校長　李壽</strong><br>
+                            <span style="color: #666; font-size: 0.65em;">任期：民國74年03月26日～民國82年02月01日</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 第二頁：第8-13任校長 -->
+                <div id="page2" class="principal-card" style="display: none; border: 3px solid #7d8b8e; box-shadow: 0 4px 16px rgba(125,139,142,0.08);">
+                    <div style="font-size: 1.2em; line-height: 1.8; color: #000000; font-family: 'KaiTi', 'Noto Sans TC', sans-serif;">
+                        <div style="margin-bottom: 20px; padding: 16px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #7d8b8e;">
+                            <strong style="color: #444; font-size: 1em;">第八任校長　戴安順</strong><br>
+                            <span style="color: #666; font-size: 0.65em;">任期：民國82年02月16日～民國89年07月31日</span>
+                        </div>
+                        <div style="margin-bottom: 20px; padding: 16px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #7d8b8e;">
+                            <strong style="color: #444; font-size: 1em;">第九任校長　張吉山</strong><br>
+                            <span style="color: #666; font-size: 0.65em;">任期：民國89年08月01日～民國93年07月31日</span>
+                        </div>
+                        <div style="margin-bottom: 20px; padding: 16px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #7d8b8e;">
+                            <strong style="color: #444; font-size: 1em;">第十任校長　劉國昌</strong><br>
+                            <span style="color: #666; font-size: 0.65em;">任期：民國93年08月01日～民國97年07月31日</span>
+                        </div>
+                        <div style="margin-bottom: 20px; padding: 16px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #7d8b8e;">
+                            <strong style="color: #444; font-size: 1em;">第十一任校長　杜水盛</strong><br>
+                            <span style="color: #666; font-size: 0.65em;">任期：民國97年08月01日～民國101年07月31日</span>
+                        </div>
+                        <div style="margin-bottom: 20px; padding: 16px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #7d8b8e;">
+                            <strong style="color: #444; font-size: 1em;">第十二任校長　曾文欽</strong><br>
+                            <span style="color: #666; font-size: 0.65em;">任期：民國101年08月01日～民國108年07月31日</span>
+                        </div>
+                        <div style="margin-bottom: 20px; padding: 16px; background: #eafcff; border-radius: 8px; border-left: 4px solid #7d8b8e; border: 2px solid #7d8b8e;">
+                            <strong style="color: #444; font-size: 1em;">第十三任校長　李培瑜</strong><br>
+                            <span style="color: #666; font-size: 0.65em;">任期：民國108年08月01日～迄今</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            function showPage(pageNum) {
+                // 隱藏所有頁面
+                document.getElementById('page1').style.display = 'none';
+                document.getElementById('page2').style.display = 'none';
+                
+                // 顯示選中的頁面
+                document.getElementById('page' + pageNum).style.display = 'block';
+                
+                // 更新按鈕樣式
+                document.getElementById('page1-btn').style.background = pageNum === 1 ? '#7d8b8e' : '#eafcff';
+                document.getElementById('page1-btn').style.color = pageNum === 1 ? '#fff' : '#444';
+                document.getElementById('page2-btn').style.background = pageNum === 2 ? '#7d8b8e' : '#eafcff';
+                document.getElementById('page2-btn').style.color = pageNum === 2 ? '#fff' : '#444';
+            }
+        </script>
+    </div>
+</body>
+</html>
