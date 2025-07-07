@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校長室</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #eafcff;
+            font-family: "KaiTi", "Noto Sans TC", sans-serif;
+        }
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+        .sidebar {
+            background: #7d8b8e;
+            width: 320px;
+            padding: 32px 0 32px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-top-right-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+        .sidebar img {
+            height: 100px;
+            margin-bottom: 12px;
+        }
+        .school-title {
+            color: #fff;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 4px;
+            letter-spacing: 2px;
+        }
+        .school-subtitle {
+            color: #fff;
+            font-size: 0.9em;
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        .side-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            width: 80%;
+        }
+        .side-menu-btn {
+            background: #eafcff;
+            color: #222;
+            border: none;
+            border-radius: 30px;
+            padding: 12px 0;
+            font-size: 1.15em;
+            font-family: inherit;
+            font-weight: 500;
+            cursor: pointer;
+            margin: 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            transition: background 0.2s, color 0.2s;
+        }
+        .side-menu-btn:hover {
+            background: #bfffff;
+            color: #444;
+        }
+        .main {
+            flex: 1;
+            padding: 48px 40px 0 60px;
+        }
+        .main h1 {
+            font-size: 4em;
+            font-family: "KaiTi", "Noto Sans TC", sans-serif;
+            font-weight: normal;
+            margin-top: 0;
+            margin-bottom: 32px;
+        }
+        .history-list {
+            font-size: 1.5em;
+            line-height: 1.7;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .history-list ul {
+            margin: 0;
+            padding-left: 1.5em;
+        }
+        .history-list li {
+            margin-bottom: 8px;
+        }
+        @media (max-width: 900px) {
+            .container { flex-direction: column; }
+            .sidebar { width: 100%; border-radius: 0; flex-direction: row; justify-content: flex-start; padding: 20px; }
+            .side-menu { flex-direction: row; gap: 10px; width: auto; }
+            .main { padding: 24px 10px 0 10px; }
+            .main h1 { font-size: 2.2em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div style="background: #eafcff; border-radius: 8px; padding: 18px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.06); margin-bottom: 12px;">
+                <a href="../index.html"><img src="school_logo.png" alt="學校標誌" style="height: 80px;"></a>
+            </div>
+            <div>
+                </div>
+            <div class="side-menu">
+                <button class="side-menu-btn" onclick="window.location.href='principal_office.html'">李培瑜 校長</button>
+                <button class="side-menu-btn" onclick="window.location.href='experience.html'">經歷介紹</button>
+                <button class="side-menu-btn" onclick="window.location.href='educational_philosophy.html'">教育理念</button>
+                <button class="side-menu-btn" onclick="window.location.href='three_wises.html'">校長三願</button>
+            </div>
+        </div>
+        <div class="main">
+            <h1>教育理念</h1>
+            <div style="border: 3px solid #7d8b8e; border-radius: 16px; box-shadow: 0 4px 16px rgba(125,139,142,0.08); padding: 32px; background: #fff;">
+                <div style="text-align:center; margin-bottom: 24px;">
+                    <img src="educational_philosophy.png" alt="教育理念" style="max-width: 440px; width: 100%; height: auto; display: block; margin: 0 auto 22px auto;">
+                </div>
+                <div class="history-list">
+                    <ul>
+                        
+                </div>
+                <div style="position: relative; min-height: 24px;">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
