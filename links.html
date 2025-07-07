@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>常用連結</title>
+  <link rel="stylesheet" href="style.css"><!-- 假設你有共用 CSS -->
+  <style>
+    body {
+      background: #eafcff;
+      font-family: 'Noto Sans TC', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .main-title {
+      font-size: 2em;
+      font-weight: bold;
+      margin: 40px 0 24px 0;
+      text-align: center;
+      letter-spacing: 0.1em;
+      color: #2563eb;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+    .section {
+      background: #fff;
+      border-radius: 20px;
+      border: 3px solid #8ba3a6;
+      box-shadow: 3px 4px 8px #8ba3a655;
+      margin-bottom: 32px;
+      padding: 32px 32px 24px 32px;
+    }
+    .section-title {
+      font-size: 1.3em;
+      font-weight: bold;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .link-btn, .back-btn {
+      background: #fff;
+      color: #222;
+      border-radius: 20px;
+      border: 3px solid #8ba3a6;
+      box-shadow: 3px 4px 8px #8ba3a655;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-family: "Noto Sans TC", sans-serif;
+      font-weight: bold;
+      padding: 12px 32px;
+      margin-bottom: 8px;
+      display: inline-block;
+      transition: background 0.2s, box-shadow 0.2s;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+      border-width: 3px;
+    }
+    .link-btn:hover, .back-btn:hover {
+      background: #eafcff;
+      box-shadow: 0 6px 16px #8ba3a655;
+    }
+    .main h1 {
+      font-size: 4em;
+      font-family: "KaiTi", "Noto Sans TC", sans-serif;
+      font-weight: normal;
+      margin-top: 40px;
+      margin-bottom: 32px;
+      text-align: left;
+      margin-left: 120px;
+    }
+    .back-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 120px;
+      margin-bottom: 24px;
+      padding: 12px 32px;
+    }
+    .title-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 40px 120px 32px 120px;
+      gap: 24px;
+    }
+    .title-row h1 {
+      margin: 0;
+      font-size: 4em;
+      font-family: "KaiTi", "Noto Sans TC", sans-serif;
+      font-weight: normal;
+      text-align: left;
+      color: #222;
+    }
+    .back-btn {
+      margin: 0;
+    }
+    @media (max-width: 900px) {
+      .title-row { margin: 32px 16px 24px 16px; flex-direction: column; align-items: flex-start; gap: 12px; }
+      .title-row h1 { font-size: 2.2em; }
+      .back-btn { margin-left: 0; }
+    }
+    @media (max-width: 600px) {
+      .btn-group { flex-direction: column; gap: 8px; }
+      .container { padding: 4px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="title-row">
+      <h1>相關連結</h1>
+      <a href="index.html" class="back-btn">
+        <span style="font-size:1.2em;vertical-align:middle;"></span> 返回首頁
+      </a>
+    </div>
+    <div class="container">
+      <!-- 教學資源 -->
+      <div class="section">
+        <div class="section-title">📚 教學資源</div>
+        <div class="btn-group">
+          <a class="link-btn" href="https://classroom.google.com/" target="_blank">Google Classroom</a>
+          <a class="link-btn" href="#">小自主學習網</a>
+          <a class="link-btn" href="#">Meet 視訊</a>
+          <a class="link-btn" href="#">Kahoot</a>
+          <a class="link-btn" href="#">教學影片採購</a>
+        </div>
+      </div>
+      <!-- 行政系統 -->
+      <div class="section">
+        <div class="section-title">🏠 行政系統</div>
+        <div class="btn-group">
+          <a class="link-btn" href="#">臺南市教育局</a>
+          <a class="link-btn" href="#">校務系統</a>
+          <a class="link-btn" href="#">學籍系統</a>
+          <a class="link-btn" href="#">教育部信箱</a>
+          <a class="link-btn" href="#">成績處理</a>
+        </div>
+      </div>
+      <!-- 資訊安全 -->
+      <div class="section">
+        <div class="section-title">🛡️ 資訊安全</div>
+        <div class="btn-group">
+          <a class="link-btn" href="#">校園資訊安全地圖</a>
+          <a class="link-btn" href="#">Open ID 整合</a>
+          <a class="link-btn" href="#">MyData</a>
+          <a class="link-btn" href="#">性名填報</a>
+          <a class="link-btn" href="#">今日資訊及資安快訊</a>
+        </div>
+      </div>
+      <!-- 填報系統 -->
+      <div class="section">
+        <div class="section-title">📝 填報系統</div>
+        <div class="btn-group">
+          <a class="link-btn" href="#">打拚條板</a>
+          <a class="link-btn" href="#">教師問卷</a>
+          <a class="link-btn" href="#">傷害填報</a>
+          <a class="link-btn" href="#">推薦填報</a>
+          <a class="link-btn" href="#">數位學習工坊填報</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
