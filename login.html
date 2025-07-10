@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>常用連結</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #eafcff;
+      font-family: 'Noto Sans TC', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .main-title {
+      font-size: 2em;
+      font-weight: bold;
+      margin: 40px 0 24px 0;
+      text-align: center;
+      letter-spacing: 0.1em;
+      color: #2563eb;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+    .section {
+      background: #fff;
+      border-radius: 20px;
+      border: 3px solid #8ba3a6;
+      box-shadow: 3px 4px 8px #8ba3a655;
+      margin-bottom: 32px;
+      padding: 32px 32px 24px 32px;
+    }
+    .section-title {
+      font-size: 1.3em;
+      font-weight: bold;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .link-btn, .back-btn {
+      background: #fff;
+      color: #222;
+      border-radius: 20px;
+      border: 3px solid #8ba3a6;
+      box-shadow: 3px 4px 8px #8ba3a655;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-family: "Noto Sans TC", sans-serif;
+      font-weight: bold;
+      padding: 12px 32px;
+      margin-bottom: 8px;
+      display: inline-block;
+      transition: background 0.2s, box-shadow 0.2s;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+      border-width: 3px;
+    }
+    .link-btn:hover, .back-btn:hover {
+      background: #eafcff;
+      box-shadow: 0 6px 16px #8ba3a655;
+    }
+    .main h1 {
+      font-size: 4em;
+      font-family: "KaiTi", "Noto Sans TC", sans-serif;
+      font-weight: normal;
+      margin-top: 40px;
+      margin-bottom: 32px;
+      text-align: left;
+      margin-left: 120px;
+    }
+    .back-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 120px;
+      margin-bottom: 24px;
+      padding: 12px 32px;
+    }
+    .title-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 40px 120px 32px 120px;
+      gap: 24px;
+    }
+    .title-row h1 {
+      margin: 0;
+      font-size: 4em;
+      font-family: "KaiTi", "Noto Sans TC", sans-serif;
+      font-weight: normal;
+      text-align: left;
+      color: #222;
+    }
+    .back-btn {
+      margin: 0;
+    }
+    input[type="text"], input[type="password"] {
+    width: 100%;           /* 寬度全滿 */
+    padding: 14px 16px;    /* 加大內距，讓輸入區更寬敞 */
+    margin: 16px 0;        /* 上下間距調整，讓欄位不擠 */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus 
+{
+  border-color: #000000; 
+  outline: none;
+}
+
+    @media (max-width: 900px) {
+      .title-row { margin: 32px 16px 24px 16px; flex-direction: column; align-items: flex-start; gap: 12px; }
+      .title-row h1 { font-size: 2.2em; }
+      .back-btn { margin-left: 0; }
+    }
+    @media (max-width: 600px) {
+      .btn-group { flex-direction: column; gap: 8px; }
+      .container { padding: 4px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="title-row">
+      <h1>管理登入</h1>
+      <a href="index.html" class="back-btn">
+        <span style="font-size:1.2em;vertical-align:middle;"></span> 返回首頁
+      </a>
+    </div>
+    <div class="container">
+      <div class="section">
+        <div class="section-title">登入</div>
+            <form action="/login" method="POST">
+                <input type="text" name="ZiaynGZiyaNG" placeholder="帳號" required />
+                <input type="password" name="chen971023" placeholder="密碼" required />
+            <div class="btn-group">
+                <button type="submit" class="link-btn">登入</button>
+            </div>
+            </form>
+        </div>
+    </body>
+</html>
